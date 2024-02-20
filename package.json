@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/IbrahimHafez1/MERN-Blog#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
+    "mongoose": "^8.1.3",
     "nodemon": "^3.0.3"
   }
 }
