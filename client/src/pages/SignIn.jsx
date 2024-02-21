@@ -7,6 +7,7 @@ import {
   signInSuccess,
 } from "../redux/user/userslice";
 import { useDispatch, useSelector } from "react-redux";
+import OAuth from "../components/OAuth";
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
@@ -95,6 +96,7 @@ export default function SignIn() {
                   "Sign In"
                 )}
               </Button>
+              <OAuth />
             </form>
             <div className="mt-4 text-center">
               <span>Don't have an account?</span>
