@@ -16,7 +16,7 @@ export default function Header() {
         to="/"
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
-        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white ">
+        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
           Ibrahim's
         </span>
         Blog
@@ -29,7 +29,7 @@ export default function Header() {
           className="hidden lg:inline"
         />
       </form>
-      <Button className="w-12 h-10" color="gray" pill>
+      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
         <AiOutlineSearch />
       </Button>
       <div className="flex gap-2 md:order-2">
@@ -42,10 +42,13 @@ export default function Header() {
           {theme === "light" ? <FaSun /> : <FaMoon />}
         </Button>
         {currentUser ? (
-          <Dropdown>
+          <Dropdown
             arrowIcon={false}
-            inline label=
-            {<Avatar alt="user" img={currentUser.profilePicture} rounded />}
+            inline
+            label={
+              <Avatar alt="user" img={currentUser.profilePicture} rounded />
+            }
+          >
             <Dropdown.Header>
               <span className="block text-sm">@{currentUser.username}</span>
               <span className="block text-sm font-medium truncate">
@@ -53,10 +56,10 @@ export default function Header() {
               </span>
             </Dropdown.Header>
             <Link to={"/dashboard?tab=profile"}>
-              <Dropdown.item>Profile</Dropdown.item>
+              <Dropdown.Item>Profile</Dropdown.Item>
             </Link>
             <Dropdown.Divider />
-            <Dropdown.item>Sign out</Dropdown.item>
+            <Dropdown.Item>Sign out</Dropdown.Item>
           </Dropdown>
         ) : (
           <Link to="/sign-in">
