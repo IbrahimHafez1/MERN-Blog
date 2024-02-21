@@ -21,9 +21,10 @@ export default function OAuth() {
         body: JSON.stringify({
           name: resultsFromGoogle.user.displayName,
           email: resultsFromGoogle.user.email,
-          googlePhotoUrl: resultsFromGoogle.user.photoURL,
+          googlePhotoURL: resultsFromGoogle.user.photoURL,
         }),
       });
+      console.log({ res });
       const data = await res.json();
       if (res.ok) {
         dispatch(signInSuccess(data));
@@ -31,6 +32,7 @@ export default function OAuth() {
       }
     } catch (error) {
       console.log(error);
+      console.log({ test: error.message });
     }
   };
   return (
