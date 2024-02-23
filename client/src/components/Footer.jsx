@@ -8,13 +8,16 @@ export default function FooterComponent() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col">
-            <Link to="/" className="text-lg font-semibold text-gray-900 mb-2">
-              <span className="px-2 py-1 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-300 rounded-lg text-white">
+            <Link
+              to="/"
+              className="text-lg font-semibold text-gray-900 mb-2 dark:text-white"
+            >
+              <span className="px-2 py-1 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-300 rounded-lg text-white ">
                 Ibrahim's
               </span>{" "}
               Blog
             </Link>
-            <p className="text-gray-700 text-sm mb-4">
+            <p className="text-gray-700 text-sm mb-4 dark:text-white">
               A platform for sharing ideas and connecting with others.
             </p>
           </div>
@@ -25,7 +28,7 @@ export default function FooterComponent() {
                 href="https://github.com/IbrahimHafez1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-900 hover:text-gray-700 mb-2 flex items-center"
+                className="text-gray-900 hover:text-gray-700 mb-2 flex items-center dark:text-white"
               >
                 <FaGithub className="mr-2" />
                 Github
@@ -34,7 +37,7 @@ export default function FooterComponent() {
                 href="https://www.linkedin.com/in/ibrahim-hafez-923307254/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-900 hover:text-gray-700 mb-2 flex items-center"
+                className="text-gray-900 hover:text-gray-700 mb-2 flex items-center dark:text-white"
               >
                 <FaLinkedin className="mr-2" />
                 Linkedin
@@ -48,7 +51,7 @@ export default function FooterComponent() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-900 hover:text-gray-700 mb-2"
+                className="text-gray-900 hover:text-gray-700 mb-2 dark:text-white"
               >
                 Privacy Policy
               </Footer.Link>
@@ -56,7 +59,7 @@ export default function FooterComponent() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-900 hover:text-gray-700 mb-2"
+                className="text-gray-900 hover:text-gray-700 mb-2 dark:text-white"
               >
                 Terms &amp; Conditions
               </Footer.Link>
