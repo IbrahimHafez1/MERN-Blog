@@ -46,7 +46,7 @@ export default function SignIn() {
   return (
     <div className="min-h-screen mt-20">
       <div className="max-w-3xl mx-auto p-8 bg-white rounded-lg shadow-md">
-        <h1 className="text-3xl font-semibold text-center mb-6">Sign Up</h1>
+        <h1 className="text-3xl font-semibold text-center mb-6">Sign in</h1>
         <div className="flex flex-col md:flex-row md:items-center md:gap-5">
           <div className="md:w-1/2">
             <Link
