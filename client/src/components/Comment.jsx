@@ -59,13 +59,13 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
         <img
           className="w-10 h-10 rounded-full bg-gray-200"
           src={user.profilePicture}
-          alt={user ? user.username : "anonymous user"}
+          alt={user.username}
         />
       </div>
       <div className="flex-1">
         <div className="flex items-center mb-1">
           <span className="font-bold mr-1 text-xs truncate">
-            {user ? `@${user.username}` : "anonymous user"}
+            {user && user.username ? `@${user.username}` : "anonymous user"}
           </span>
           <span className="text-gray-500 text-xs">
             {moment(comment.createdAt).fromNow()}
