@@ -125,7 +125,6 @@ export default function CommentSection({ postId }) {
           <Link
             to="/dashboard?tab=profile"
             className="text-xs text-cyan-600 hover:underline"
-            placeholder="Profile"
           >
             @{currentUser.username}
           </Link>
